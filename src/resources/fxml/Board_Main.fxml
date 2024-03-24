@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="root" alignment="CENTER" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" prefHeight="350.0" prefWidth="370.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Boardplay.Board_Main">
+        <Label styleClass="font" text="BOMB" />
+        <VBox spacing="10">
+            <HBox spacing="50">
+                 <Label styleClass="font" text="Left Content" />
+                <HBox fx:id="spacer" HBox.hgrow="ALWAYS" />
+                 <Label styleClass="font" text="Right Content" />
+            </HBox> 
+        </VBox>
+   <SplitPane dividerPositions="0.5, 0.5" nodeOrientation="LEFT_TO_RIGHT" pickOnBounds="false" prefHeight="160.0" prefWidth="200.0" styleClass="split-pane-divider" VBox.vgrow="SOMETIMES">
+     <items>
+       <AnchorPane minHeight="0.0" minWidth="0.0" />
+              
+        <VBox fx:id="boardPane" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" SplitPane.resizableWithParent="false"> </VBox>
+       <AnchorPane />
+     </items>
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+   </SplitPane> 
+</VBox>

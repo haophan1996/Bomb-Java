@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "ApexV2 Black";
+    src: url('../fonts/font.ttf');
+} 
+
+@font-face {
+    font-family: "Verdana";
+    src: url('../fonts/font2.ttf');
+} 
+
+
+.background {
+    -fx-background-color: rgba(173, 216, 230, 0.5);
+    -my-custom-color: #FFD700; /* Custom property */
+}
+
+.Color-black {
+    -fx-background-color: rgba(0, 0, 0, 0.5);
+    -my-custom-color: #FFD700; /* Custom property */
+}
+
+.btn-main { 
+    /* -fx-background-color: rgba(255, 255, 255, 0.7); White with transparency */
+    -fx-border-color: rgba(70, 130, 180, 0.8); /* Steel blue border with transparency */
+    -fx-border-width: 2;
+    -fx-border-radius: 5;
+    -fx-padding: 10;
+    -fx-text-fill: #333333; /* Dark text color */
+
+    font-family: "ApexV2 Black";
+    -fx-font-family: 'ApexV2 Black';
+}
+
+.font {
+    font-family: "ApexV2 Black";
+    -fx-font-family: 'ApexV2 Black';
+}
+
+.font-2 {
+    font-family: "Verdana";
+    -fx-font-family: 'Verdana';
+}
+
+.hbox {
+    -fx-alignment: center;
+}
+
+.split-pane-divider {
+    -fx-background-color: transparent;
+ }
+
+.button-vbox {  
+    -fx-border-color: rgba(0, 0, 255, 0.5);
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;  
+    -fx-background-radius: 5px;
+    -fx-background-color: rgba(245, 77, 62, 0.3);
+    -fx-label-padding: 0 0 0 5px; /* Padding for label inside the VBox */
+    -fx-cursor: hand; /* Show hand cursor on hover */
+    
+}
+
+.button-vbox-CANCEL {  
+    -fx-border-color: rgba(0, 0, 255, 0.5);
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;  
+    -fx-background-radius: 5px;
+    -fx-background-color: rgba(255, 255, 255, 0.3);
+    -fx-label-padding: 0 0 0 5px; /* Padding for label inside the VBox */
+    -fx-cursor: hand; /* Show hand cursor on hover */
+    
+}
+
+.button-vbox:hover {
+    -fx-background-color: rgba(245, 62, 163, 0.3); /* Darker green color on hover */
+}
+
+.button-header-label-vbox{
+    -fx-font-size: 18px;
+}
+.button-subheader-label-vbox{
+    -fx-font-size: 15px;
+}
+
+
+.custom-blur-background {
+    -fx-background-image: url('../GAME_UI/background-blur.png'); 
+}
+
+.custom-blurred-content {
+    /* -fx-background-color: rgba(255, 255, 255, 0.7); Adjust the background color and transparency as needed */
+    -fx-effect: dropshadow(gaussian, rgba(46, 27, 27, 0.7), 10, 0, 0, 0); 
+}
+
+.custom-border {
+    -fx-border-color: rgba(0, 0, 255, 0.5);
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-color: rgba(2, 17, 91, 0.3); 
+}
